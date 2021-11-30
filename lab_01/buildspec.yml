@@ -2,9 +2,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling the Go code...
-      - go build ./lab_01/hello.go
+      - make -f lab_01/Makefile
 artifacts:
   files:
     - hello
